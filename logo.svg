@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048" width="100%" height="100%">
+  <title>iGood_Studio Logo</title>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="45%" r="75%">
+      <stop offset="0" stop-color="#E6FCBE"/>
+      <stop offset="1" stop-color="#E3FAB8"/>
+    </radialGradient>
+    <clipPath id="rounded">
+      <rect x="0" y="0" width="2048" height="2048" rx="500" ry="500"/>
+    </clipPath>
+  </defs>
+  <style>
+    .line{stroke:#4B1551;stroke-width:30;stroke-linejoin:round;stroke-linecap:round}
+    .ink{fill:#4B1551}
+  </style>
+  <g clip-path="url(#rounded)">
+    <rect width="2048" height="2048" fill="url(#bg)"/>
+    <path class="line" fill="#BFF426" d="M413 840 C413 770 460 728 522 728 C590 728 632 775 632 840 L632 1222 L1000 1222 L1298 1000 L1298 1350 C1230 1425 1120 1478 980 1478 L520 1478 C455 1478 413 1435 413 1370 Z"/>
+    <path class="ink" d="M617 790 L900 790 L900 1237 L617 1237 Z"/>
+    <path class="ink" d="M1240 990 L1300 990 L1300 1105 L1272 1112 L1240 1112 Z"/>
+    <path class="ink" stroke="#4B1551" stroke-width="30" stroke-linejoin="round" d="M1167 672 L1500 540 L1218 785 L1167 800 Z"/>
+    <path class="line" fill="#FEFFD7" d="M640 900 C640 650 780 478 1030 477 L1475 477 C1510 477 1530 505 1508 535 C1480 575 1390 630 1300 672 L1167 672 L1167 800 L1262 800 L1262 1005 C1276 1160 1140 1266 985 1266 C790 1266 650 1100 640 900 Z"/>
+    <rect class="ink" x="803" y="730" width="72" height="150" rx="36"/>
+    <rect class="ink" x="948" y="690" width="72" height="150" rx="36"/>
+    <path d="M793 962 C830 1080 900 1120 985 1120 C1060 1120 1105 1070 1130 1000" fill="none" stroke="#4B1551" stroke-width="58" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="line" fill="#FEB81C" d="M1298 1343 L1510 1343 L1510 1390 C1510 1440 1470 1478 1420 1478 L1390 1478 C1340 1478 1298 1440 1298 1390 Z"/>
+    <path class="line" fill="#FEFFD7" d="M1195 800 L1455 800 C1490 800 1510 825 1510 865 L1510 1250 C1510 1305 1470 1343 1420 1343 L1300 1343 L1300 990 L1115 990 C1075 990 1055 960 1055 925 C1055 870 1130 800 1195 800 Z"/>
+    <circle class="line" cx="524" cy="587" r="117" fill="#BFF426"/>
+  </g>
+</svg>

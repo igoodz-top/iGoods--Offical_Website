@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGood Studio</title>
+    <link rel="icon" type="image/png" href="example.png">
+    <link rel="apple-touch-icon" href="example.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgMain: '#F5F5F7',
+                        textMain: '#1d1d1f',
+                        appleBlue: '#0071e3',
+                    },
+                    fontFamily: {
+                        sf: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        card: '24px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .liquid-glass {
+                background: rgba(255,255,255,0.72);
+                backdrop-filter: blur(18px) saturate(180%);
+                -webkit-backdrop-filter: blur(18px) saturate(180%);
+            }
+            .glass-card {
+                background: rgba(255,255,255,0.68);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
+                box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            }
+            .soft-gradient {
+                background: linear-gradient(180deg, #F5F5F7 0%, #efeff4 100%);
+            }
+            .icon-img {
+                width:20px;
+                height:20px;
+                flex-shrink:0;
+                object-fit:contain;
+            }
+        }
+        * {
+            font-family: 'Inter', system-ui, -apple-system;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="soft-gradient min-h-screen text-textMain font-sf">
+    <nav class="liquid-glass fixed top-3 left-1/2 -translate-x-1/2 w-[94%] max-w-6xl z-50 rounded-card px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between shadow-sm">
+        <a href="https://example.com" class="flex items-center gap-2">
+            <img src="example.png" alt="iGood Studio Logo" class="h-8 w-8 sm:h-9 sm:w-9 rounded-xl object-cover">
+            <span class="font-semibold text-base sm:text-lg">iGood Studio</span>
+        </a>
+        <div class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium">
+            <a href="#services" class="hover:text-appleBlue transition-colors">服务</a>
+            <a href="#works" class="hover:text-appleBlue transition-colors">作品</a>
+            <a href="#about" class="hover:text-appleBlue transition-colors">关于</a>
+            <a href="https://github.com/iGoods-CN" target="_blank" class="flex items-center gap-1.5 hover:text-appleBlue transition-colors">
+                <img src="example_icon.png" alt="Icon" class="icon-img">
+                Github
+            </a>
+            <a href="https://example.com" target="_blank" class="flex items-center gap-1.5 bg-[#F1F3F5] text-textMain hover:bg-[#E9ECEF] px-4 py-2 rounded-full transition">
+                <img src="example_icon.png" alt="Icon" class="icon-img">
+                示例站点
+            </a>
+            <a href="https://example.com" target="_blank" class="flex items-center gap-1.5 bg-appleBlue text-white hover:opacity-90 px-4 py-2 rounded-full transition">
+                <img src="example_icon.png" alt="Icon" class="icon-img">
+                联系邮箱
+            </a>
+        </div>
+        <button id="menuBtn" class="md:hidden p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </nav>
+    <div id="mobileMenu" class="liquid-glass fixed top-[4.5rem] left-1/2 -translate-x-1/2 w-[94%] max-w-6xl z-40 rounded-card px-5 py-6 hidden">
+        <div class="flex flex-col gap-5 text-base font-medium">
+            <a href="#services" class="hover:text-appleBlue transition-colors">服务</a>
+            <a href="#works" class="hover:text-appleBlue transition-colors">作品</a>
+            <a href="#about" class="hover:text-appleBlue transition-colors">关于</a>
+            <a href="https://github.com/iGoods-CN" target="_blank" class="flex items-center gap-2 hover:text-appleBlue transition-colors">
+                <img src="example_icon.png" alt="Icon" class="icon-img">
+                Github
+            </a>
+            <a href="https://example.com" target="_blank" class="flex items-center gap-2 bg-[#F1F3F5] text-textMain hover:bg-[#E9ECEF] px-4 py-2 rounded-full w-fit">
+                <img src="example_icon.png" alt="Icon" class="icon-img">
+                示例站点
+            </a>
+            <a href="https://example.com" target="_blank" class="flex items-center gap-2 bg-appleBlue text-white hover:opacity-90 px-4 py-2 rounded-full w-fit">
+                <img src="example_icon.png" alt="Icon" class="icon-img">
+                联系邮箱
+            </a>
+        </div>
+    </div>
+
+    <section class="pt-28 sm:pt-32 pb-16 sm:pb-20 px-4 sm:px-6 max-w-6xl mx-auto">
+        <div class="glass-card rounded-card overflow-hidden">
+            <img src="example.png" alt="iGood 横幅" class="w-full h-40 sm:h-56 md:h-80 object-cover">
+            <div class="p-5 sm:p-8 md:p-12">
+                <p class="text-appleBlue font-medium mb-3">大家好，我是 iGood。</p>
+                <h1 class="text-[clamp(1.8rem,6vw,3.8rem)] font-bold leading-tight tracking-tight mb-5 sm:mb-6">
+                    一站式数字视觉解决方案
+                </h1>
+                <p class="text-gray-600 text-base sm:text-lg max-w-3xl">
+                    iGood Studio 专注网站开发、定制PPT设计与短视频创作，为个人创作者和小型团队提供一站式数字视觉方案。我们擅长轻量化网站搭建，制作支持明暗主题、云持久存储的博客与社区站点。PPT设计兼顾简约商务质感与创意视觉，适用于汇报、演示与展览场景。同时提供短视频全套配套服务，包含封面设计与剪辑。工作室以低饱和高级绿作为核心视觉色调，兼顾美观与实用性。无论是个人博客、商业展示页、工作演示文稿还是宣传短片，我们都可以定制专属方案，用简洁流畅的视觉表达，高效落地每一项数字创作。
+                </p>
+                <div class="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8">
+                    <a href="#services" class="bg-appleBlue text-white px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-medium hover:opacity-90 transition">查看服务</a>
+                    <a href="https://example.com" class="glass-card flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-medium hover:shadow-md transition">
+                        <img src="example_icon.png" alt="Icon" class="icon-img">
+                        发送邮件
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="px-4 sm:px-6 max-w-6xl mx-auto pb-16 sm:pb-20">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-6 sm:mb-10">我们提供的服务</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <div class="glass-card rounded-card p-5 sm:p-8 lg:col-span-2">
+                <h3 class="text-lg sm:text-xl font-semibold mb-3">轻量化网站开发</h3>
+                <p class="text-gray-600">个人博客与商业社区站点，支持明暗主题切换与云持久存储，打造干净流畅的使用体验。</p>
+            </div>
+            <div class="glass-card rounded-card p-5 sm:p-8">
+                <h3 class="text-lg sm:text-xl font-semibold mb-3">定制PPT设计</h3>
+                <p class="text-gray-600">简约商务与创意风格，适配报告、演示、展览各类场景。</p>
+            </div>
+            <div class="glass-card rounded-card p-5 sm:p-8">
+                <h3 class="text-lg sm:text-xl font-semibold mb-3">短视频制作</h3>
+                <p class="text-gray-600">包含视频剪辑、封面美术设计在内的完整视觉包。</p>
+            </div>
+            <div class="glass-card rounded-card p-5 sm:p-8 lg:col-span-2">
+                <h3 class="text-lg sm:text-xl font-semibold mb-3">定制数字解决方案</h3>
+                <p class="text-gray-600">量身定制方案，落地你的数字项目，以低饱和高级绿作为核心视觉风格。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="px-4 sm:px-6 max-w-6xl mx-auto pb-16 sm:pb-20">
+        <div class="glass-card rounded-card p-6 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-5 sm:gap-6">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-3">开源项目</h2>
+                <p class="text-gray-600">浏览我们的代码仓库与开源作品</p>
+            </div>
+            <a href="https://github.com/iGoods-CN" target="_blank" class="flex items-center gap-2 bg-textMain text-white px-6 py-2.5 sm:px-7 sm:py-3 rounded-full font-medium hover:opacity-90 transition">
+                <img src="example_icon.png" alt="Icon" class="icon-img">
+                访问仓库
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="px-4 sm:px-6 max-w-6xl mx-auto pb-20 sm:pb-24">
+        <div class="glass-card rounded-card p-6 sm:p-10">
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-4">关于 iGood Studio</h2>
+            <p class="text-gray-600 mb-6">我们以低饱和高级绿作为核心视觉基调，兼顾美观与实用。从个人博客、商业落地页到演示幻灯片与宣传短片，按需打造专属方案。</p>
+            <div class="flex flex-wrap gap-3 sm:gap-4">
+                <a href="https://example.com" target="_blank" class="glass-card flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full hover:shadow transition">
+                    <img src="example_icon.png" alt="Icon" class="icon-img">
+                    支持我们
+                </a>
+                <a href="https://example.com" class="glass-card flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full hover:shadow transition">
+                    <img src="example_icon.png" alt="Icon" class="icon-img">
+                    联系我们
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-4 sm:px-6 max-w-6xl mx-auto pb-16 sm:pb-20">
+        <div class="glass-card rounded-card p-6 sm:p-10">
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-4">开源协议</h2>
+            <p class="text-gray-600 mb-4">本项目基于 MIT 协议开源。</p>
+            <p class="text-gray-600 text-sm">
+                特此免费授予获得本软件及相关文档文件（下称“软件”）副本的任何人不受限制地处理本软件的权利，包括但不限于使用、复制、修改、合并、发布、分发、再许可和/或出售本软件副本，并允许向其提供本软件的人这样做，但须符合以下条件：<br><br>
+                上述版权声明和本许可声明应包含在软件的所有副本或重要部分中。<br><br>
+                本软件按原样提供，不作任何明示或暗示的保证，包括但不限于适销性、特定用途适用性和非侵权性的保证。在任何情况下，作者或版权持有人均不对任何索赔、损害或其他责任负责，无论是在合同诉讼、侵权诉讼或其他诉讼中，由软件或软件的使用或其他交易引起、产生或与之相关。
+            </p>
+        </div>
+    </section>
+
+    <footer class="px-4 sm:px-6 py-8 sm:py-10 border-t border-gray-200/50 max-w-6xl mx-auto text-center text-sm text-gray-500">
+        <p>© 2025-2026 iGood Studio。基于 MIT 协议开源。<a href="https://github.com/iGoods-CN" target="_blank" class="underline hover:text-appleBlue">在 GitHub 查看</a></p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menuBtn');
+        const menu = document.getElementById('mobileMenu');
+        btn.onclick = ()=>{
+            menu.classList.toggle('hidden');
+        }
+        document.querySelectorAll('#mobileMenu a').forEach(link=>{
+            link.onclick = ()=>menu.classList.add('hidden');
+        })
+    </script>
+</body>
+</html>
