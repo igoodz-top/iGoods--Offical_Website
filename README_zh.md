@@ -1,4 +1,4 @@
-<div align="center">
+<div>
   <img src="./logo.svg" alt="iGood Studio Logo" width="120" />
 </div>
 
