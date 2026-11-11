@@ -51,8 +51,8 @@ MIT 协议仅覆盖源代码本身。本协议**不授予**您使用“iGood Stu
 
 ## 🔗 相关链接
 
-- 演示站点：[https://cn.igoods.cc.cd/](https://cn.igoods.cc.cd/)
-- GitHub：[https://github.com/iGoods-CN](https://github.com/iGoods-CN)
+- 演示站点：[https://www.igoodz.top/old-index](https://www.igoodz.top/old-index)
+- GitHub：[https://github.com/igoodz-top/iGoods--Offical_Website](https://github.com/igoodz-top/iGoods--Offical_Website)
 
 ---
 
