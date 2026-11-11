@@ -2,11 +2,11 @@
   <img src="./logo.svg" alt="iGood Studio Logo" width="120" />
 </div>
 
-# iGood Studio Official Website
+# iGood Studio Official Website>
 
 > iGood Studio liquid glass style landing page, built with Tailwind CSS.
 
-> [English](README.md) | [简体中文](README.zh-Hans.md) | [繁體中文](README.zh-Hant.md)
+> English| [简体中文](README.zh-Hans.md) | [繁體中文](README.zh-Hant.md)
 
 ## ✨ Features
 - Apple-style liquid frosted glass interface
