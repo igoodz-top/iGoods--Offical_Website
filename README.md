@@ -6,7 +6,7 @@
 
 > iGood Studio liquid glass style landing page, built with Tailwind CSS.
 
-> English| [简体中文](README.zh-Hans.md) | [繁體中文](README.zh-Hant.md)
+> English | [简体中文](README.zh-Hans.md) | [繁體中文](README.zh-Hant.md)
 
 ## ✨ Features
 - Apple-style liquid frosted glass interface
