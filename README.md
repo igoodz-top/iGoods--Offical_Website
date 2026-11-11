@@ -51,8 +51,8 @@ The MIT License covers the source code only. It does **not** grant any rights to
 
 ## 🔗 Links
 
-- Demo Site: [https://cn.igoods.cc.cd/](https://cn.igoods.cc.cd/)
-- GitHub Organization: [https://github.com/iGoods-CN](https://github.com/iGoods-CN)
+- Demo Site:[https://www.igoodz.top/old-index](https://www.igoodz.top/old-index)
+- GitHub：[https://github.com/igoodz-top/iGoods--Offical_Website](https://github.com/igoodz-top/iGoods--Offical_Website)
 
 ---
 
