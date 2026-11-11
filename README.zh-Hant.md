@@ -51,8 +51,8 @@ MIT License 僅涵蓋原始碼本身。本授權**不授予**任何使用「iGoo
 
 ## 🔗 連結
 
-- 示範網站：[https://cn.igoods.cc.cd/](https://cn.igoods.cc.cd/)
-- GitHub：[https://github.com/iGoods-CN](https://github.com/iGoods-CN)
+- 示範網站：[https://www.igoodz.top/old-index](https://www.igoodz.top/old-index)
+- GitHub：[https://github.com/igoodz-top/iGoods--Offical_Website](https://github.com/igoodz-top/iGoods--Offical_Website)
 
 ---
 
